@@ -46,7 +46,6 @@ class StudentController extends Controller
     );
 
     Student::create($validated);
-
     return to_route('student.index')->withSuccess('Data Berhasil Ditambahkan');
     }
 
@@ -97,7 +96,6 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         $student->delete();
-
         return to_route('student.index')->withSuccess('Data Berhasil Dihapus');
     }
 }
