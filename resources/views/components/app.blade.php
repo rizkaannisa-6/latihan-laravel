@@ -11,6 +11,19 @@
 
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">UNITAMA</a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="{{ route('student.index') }}">Student</a>
+                    <a class="nav-link" href="{{ route('department.index') }}">Department</a>
+                    <a class="nav-link" href="{{ route('lecturer.index') }}">Lecture</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     {{-- page title --}}
     <div class="bg-primary py-5 text-center text-white">
